@@ -1,0 +1,9 @@
+/* Estilos para el footer */
+
+.site-footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

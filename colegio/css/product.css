@@ -1,0 +1,343 @@
+/* Estilos para la página de detalle del producto */
+
+/* Contenedor principal del detalle */
+.product-detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Imagen del producto */
+.product-image {
+    flex: 1 1 40%;
+}
+.product-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain; /* La imagen se muestra completa dentro de su contenedor */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Información del producto */
+.product-info-detail {
+    flex: 1 1 50%;
+}
+.product-info-detail h2 {
+    margin-bottom: 10px;
+}
+.price-detail {
+    font-size: 1.5rem;
+    color: #0079D3;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.product-info-detail p {
+    margin-bottom: 20px;
+}
+
+/* Opciones de compra */
+.purchase-options {
+    margin-top: 20px;
+}
+.add-to-cart-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.add-to-cart-form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0079D3;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #005a9c;
+}
+.buy-now-btn {
+    background-color: #28a745;
+}
+.buy-now-btn:hover {
+    background-color: #218838;
+}
+
+/* Sección de Comentarios */
+.comments-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.comments-section h3 {
+    margin-bottom: 20px;
+}
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 80px;
+    margin-bottom: 10px;
+}
+.comments-list {
+    margin-top: 20px;
+}
+.comment {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.comment-author {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.comment-text {
+    margin-bottom: 10px;
+}
+.comment-date {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Responsive para producto */
+@media (max-width: 768px) {
+    .product-detail-container {
+        flex-direction: column;
+    }
+    .product-image, .product-info-detail {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Grilla de productos */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Tarjeta de producto */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Contenedor de la imagen */
+.product-img img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover; /* Asegura que la imagen llene la caja sin distorsionarse */
+}
+
+/* Información del producto */
+.product-info {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.product-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0079D3;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0079D3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005a9c;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.product-info-detail {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.price-detail {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.purchase-options {
+    margin-top: 20px;
+}
+
+/*  LO NUEVO          */
+
+/* Carrusel de imágenes */
+.image-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden; /* Oculta las imágenes fuera del contenedor */
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transición suave al mover las imágenes */
+}
+
+.image-slide {
+    min-width: 100%;
+    transition: 0.5s ease;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+/* Flechas de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Selección de foto principal */
+.main-image-selection {
+    margin-top: 30px;
+}
+
+.main-image-selection select {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.main-image-selection button {
+    padding: 10px 20px;
+    background-color: #0079D3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.main-image-selection button:hover {
+    background-color: #005a9c;
+}
+
+
+

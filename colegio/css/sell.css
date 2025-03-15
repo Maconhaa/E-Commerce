@@ -1,0 +1,92 @@
+/* Estilos para la página de venta */
+.sell-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Título */
+.sell-container h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Mensajes de éxito y error */
+.message {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Formulario */
+.sell-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sell-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.sell-form input,
+.sell-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sell-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Botón */
+.sell-form button {
+    background: #ffcc00;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.sell-form button:hover {
+    background: #e6b800;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sell-container {
+        width: 90%;
+    }
+
+    .sell-form button {
+        font-size: 16px;
+    }
+}
